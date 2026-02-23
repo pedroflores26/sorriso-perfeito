@@ -1,0 +1,230 @@
+:root {
+  --azul: #A9D6E5;
+  --branco: #FFFFFF;
+  --cinza: #F3F4F6;
+  --verde: #90BE6D;
+  --dark-bg: #1E1E1E;
+  --dark-card: #2A2A2A;
+  --dark-text: #F3F4F6;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  background: var(--branco);
+  height: 130px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;   /* mais colada na esquerda */
+  padding-right: 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* LOGO MAIOR */
+.logo {
+  height: 135px;
+  object-fit: contain;
+}
+
+/* MENU */
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--verde);
+}
+
+/* BOTÃO MODO ESCURO */
+.dark-btn {
+  margin-left: 20px;
+  background: var(--verde);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.dark-btn:hover {
+  opacity: 0.8;
+}
+
+/* ================= SEÇÕES ================= */
+
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero {
+  background: var(--azul);
+  color: #fff;
+}
+
+.bg-light {
+  background: var(--cinza);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--branco);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* GALERIA */
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* BOTÕES */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: var(--verde);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* FORMULÁRIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--azul);
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+/* ================= MODO ESCURO ================= */
+
+body.dark {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark header {
+  background: #2A2A2A;
+}
+
+body.dark .card {
+  background: var(--dark-card);
+}
+
+body.dark .bg-light {
+  background: #252525;
+}
+
+body.dark footer {
+  background: #2A2A2A;
+}
+
+body.dark nav a {
+  color: #ddd;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 100px;
+  }
+
+  .logo {
+    height: 90px;
+  }
+
+  nav ul {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .dark-btn {
+    padding: 8px 12px;
+  }
+}
