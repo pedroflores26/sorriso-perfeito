@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorriso Perfeito | Consultório Dentário</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<header>
+  
+  <div class="container header-content">
+    <img src="imgs/logo.png" alt="Logo Sorriso Perfeito" class="logo">
+    <nav>
+      <ul> 
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+         <button id="toggleDark" class="dark-btn"></button>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="section hero">
+  <div class="container">
+    <h1>Bem-vindo ao Sorriso Perfeito</h1>
+    <p>Cuidando do seu sorriso com tecnologia, carinho e profissionalismo.</p>
+    <a href="#contato" class="btn">Agende sua Consulta</a>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+      <div class="card">Limpeza e Profilaxia</div>
+      <div class="card">Clareamento Dental</div>
+      <div class="card">Ortodontia</div>
+      <div class="card">Implantes Dentários</div>
+      <div class="card">Restaurações</div>
+      <div class="card">Tratamento de Canal</div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" class="section bg-light">
+  <div class="container">
+    <h2>Galeria de Sorrisos</h2>
+    <div class="grid gallery">
+      <img src="imgs/young-hispanic-girl-smiling-happy-walking-city.jpg" alt="Paciente sorrindo após clareamento">
+      <img src="imgs/front-view-beautiful-girl-with-yellow-hoodie.jpg" alt="Sorriso saudável após tratamento">
+      <img src="imgs/man-being-outside-smile-while-looking-camera.jpg" alt="Paciente feliz após atendimento odontológico">
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" class="section">
+  <div class="container">
+    <h2>Depoimentos</h2>
+    <div class="grid">
+      <div class="card">
+        <p>"Excelente atendimento! Recomendo muito."</p>
+        <strong>— Maria Silva</strong>
+      </div>
+      <div class="card">
+        <p>"Profissionais atenciosos e ambiente moderno"</p>
+        <strong>— Ana Costa</strong>
+      </div>
+      <div class="card">
+        <p>"Meu sorriso mudou completamente!"</p>
+        <strong>— João Pedro</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section bg-light">
+  <div class="container">
+    <h2>Contato</h2>
+    <form id="formContato">
+      <input type="text" id="nome" placeholder="Seu nome">
+      <input type="email" id="email" placeholder="Seu e-mail">
+      <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p> Rua Exemplo, 123 - Centro</p>
+    <p> (51) 99999-9999</p>
+    <p>© 2026 Sorriso Perfeito - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
